@@ -1,0 +1,22 @@
+baseurl = "http://bahraincab.com/"
+languageCode = "en-us"
+title = "Bahrain Taxi"
+description = "Taxi and Tranportation Services"
+theme = "hugo-base-theme"
+tags = "Bahrain"
+
+[params]
+description = "Taxi and Tranportation Services"
+mainIcon = "/img/logo.gif"
+[[params.social]]
+    title = "facebook"
+    url = "https://www.facebook.com/Bahrain-Cab-447287265403301/"
+[[params.social]]
+    title = "twitter"
+    url = "https://twitter.com/bahraincab"
+[[params.social]]
+    title = "linkedin"
+    url = "https://www.linkedin.com/in/bahraincab"
+[[params.social]]
+    title = "Google+"
+    url = "https://plus.google.com/+BahraincabTaxi"

@@ -1,0 +1,138 @@
+{{ partial "header.html" . }}
+{{ partial "social.html" . }}
+{{ partial "top-block.html" . }}
+  {{ range $index, $element :=  .Data.Pages.ByWeight }}{{ if eq .Section "post" }}
+
+    <div id="main">
+        <!-- Intro -->
+        {{ if modBool $index 2 }}<div id="intro" class="counterpoint">{{ else }}<div id="intro" class="point">{{ end}}
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-md-offset-3 text-left">	
+				{{ if eq $index 0 }}
+					<a href="#intro" class="btn"><img src="{{ .Site.BaseURL }}{{ .Site.Params.mainIcon }}" class="logo"></a>
+				{{ end }}
+                {{ if (isset .Params "icon") }}
+                    <i class="lead-icon icon-{{ .Params.icon }}"></i>
+                {{ end }}
+                <h2>{{ .Title }}</h2>
+                <p class="lead">
+                    {{ .Content }}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /Intro -->
+      {{ end }}
+      
+	  
+	  {{ if eq .Section "carousel" }}
+      <!-- /Point -->
+      <div class="callout">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-left">
+                {{ if (isset .Params "icon") }}
+                    <i class="callout-icon icon-{{ .Params.icon }}"></i>
+                {{ end }}
+                <p>{{ .Content }}</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-left">
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner owl-carousel">
+                    {{ range .Params.carousel }}
+                      <div class="item"> <blockquote><p>{{ .quote }}</p>&mdash; {{ .author }} <a href="{{ .url }}">{{ .quote_date }}</a></blockquote> </div>
+                    {{ end }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /Point -->
+      {{ end }}
+    {{ end }}
+
+    </div>
+
+        <!-- Call to Action -->
+        <div id="action" class="call-to-action">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 col-md-offset-1 text-center">
+	
+        <div class="buttonbox">
+       {{ range .Site.Params.social }}
+            <a href="{{ .url }}" class="btn btn-default btn-lg"><i class="icon-{{ lower .title }}"></i> <span class="network-name">{{ .title }}</span></a>
+        {{ end }}
+        </div>
+        </ul>
+        <hr>
+        <p>Copyright &copy; Bahrain Cab 2016</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /Call to Action -->
+
+		<script type="text/javascript">
+$(function(){
+	$('.tabcontent').css("display", "none" );
+	$("#tab1").css("display","block");	
+	$('ul.content_links li a').click(function(e){
+		
+		var elm = $(this).attr('rel');
+		$('ul.content_links li').attr('class', '');
+		$(this).parent().attr('class', 'current');
+		$('.tabcontent').css("display", "none" );
+		$("#" +elm).css("display","block");	
+	});
+});
+</script>
+<script type='text/javascript'>
+    var _sf_async_config={};
+    _sf_async_config.uid = 62088;
+    _sf_async_config.domain = 'alwasatnews.com';
+    _sf_async_config.useCanonical = true;
+    _sf_async_config.sections = 'digital,البحرين';
+    _sf_async_config.authors = '';
+    (function(){
+      function loadChartbeat() {
+        window._sf_endpt=(new Date()).getTime();
+        var e = document.createElement('script');
+        e.setAttribute('language', 'javascript');
+        e.setAttribute('type', 'text/javascript');
+        e.setAttribute('src', '//static.chartbeat.com/js/chartbeat.js');
+        document.body.appendChild(e);
+      }
+      var oldonload = window.onload;
+      window.onload = (typeof window.onload != 'function') ?
+         loadChartbeat : function() { oldonload(); loadChartbeat(); };
+    })();
+</script>
+<!-- BEGIN EFFECTIVE MEASURE CODE -->
+<!-- COPYRIGHT EFFECTIVE MEASURE -->
+<script type="text/javascript">
+	(function() {
+		var em = document.createElement('script'); em.type = 'text/javascript'; em.async = true;
+		em.src = ('https:' == document.location.protocol ? 'https://me-ssl' : 'http://me-cdn') + '.effectivemeasure.net/em.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(em, s);
+	})();
+</script>
+<noscript>
+	<img src="//me.effectivemeasure.net/em_image" alt="" style="position:absolute; left:-5px;" />
+</noscript>
+<!--END EFFECTIVE MEASURE CODE -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-5009699-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
