@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
   <channel>
-    <title>Bahrain Taxi</title>
+    <title>Bahrain Cab</title>
     <link>https://bahraincab.com/</link>
-    <description>Recent content on Bahrain Taxi</description>
+    <description>Recent content on Bahrain Cab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 31 Dec 2015 17:11:16 -0500</lastBuildDate>
     <atom:link href="https://bahraincab.com/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Bahrain Taxi</title>
+      <title>Bahrain Cab</title>
       <link>https://bahraincab.com/post/first/</link>
       <pubDate>Thu, 31 Dec 2015 17:11:16 -0500</pubDate>
       
