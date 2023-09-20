@@ -1032,7 +1032,7 @@ __livereload.LiveReload = LiveReload = (function() {
       liveImg: (_ref1 = message.liveImg) != null ? _ref1 : true,
       originalPath: message.originalPath || '',
       overrideURL: message.overrideURL || '',
-      serverURL: "http://" + this.options.host + ":" + this.options.port
+      serverURL: "https://" + this.options.host + ":" + this.options.port
     });
   };
 
