@@ -295,6 +295,19 @@ footer a:hover {
     transition: all .35s;
 }
 
+.btn-twitter, .btn-twitter:visited {
+    border-color: #1b95e0;
+    background-color: #1b95e0;
+    color: #fff;
+    border-radius: 15px;
+    font-weight: 500;
+}
+
+.btn-twitter:hover {
+    border-color: #0c7abf;
+    background-color: #0c7abf;
+}
+
 .btn2-primary:hover,
 .btn2-primary:focus,
 .btn2-primary.focus,
