@@ -300,12 +300,30 @@ footer a:hover {
     background-color: #1b95e0;
     color: #fff;
     border-radius: 15px;
-    font-weight: 500;
 }
 
 .btn-twitter:hover {
     border-color: #0c7abf;
     background-color: #0c7abf;
+}
+
+.btn-whatsapp, .btn-whatsapp:visited {
+    border-color: #25d366;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 15px;
+    text-align:right;
+    width: 140px;
+    background-image: url('../img/whatsapp/WhatsAppButtonGreen.svg');
+    background-repeat: no-repeat;
+    background-size:auto;
+    background-position: center left;
+}
+
+.btn-whatsapp:hover {
+    border-color: #12ac48;
+    background-color: #12ac48;
+    background-image: url('../img/whatsapp/WhatsAppButtonGreenDarker.svg');
 }
 
 .btn2-primary:hover,
