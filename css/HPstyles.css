@@ -295,6 +295,18 @@ footer a:hover {
     transition: all .35s;
 }
 
+.btn-facebook, .btn-facebook:visited {
+    border-color: #4e69a2;
+    background-color: #4e69a2;
+    color: #fff;
+    border-radius: 15px;
+}
+
+.btn-facebook:hover {
+    border-color: #3b5998;
+    background-color: #3b5998;
+}
+
 .btn-twitter, .btn-twitter:visited {
     border-color: #1b95e0;
     background-color: #1b95e0;
