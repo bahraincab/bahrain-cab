@@ -338,6 +338,15 @@ footer a:hover {
     background-image: url('../img/whatsapp/WhatsAppButtonGreenDarker.svg');
 }
 
+.btn-linkedin, .btn-linkedin:visited {
+    border-radius: 15px;
+    width: 140px;
+    background-image: url('../img/linkedin/linkedinButton.svg');
+    background-repeat: no-repeat;
+    background-size:75%;
+    background-position: center;
+}
+
 .btn2-primary:hover,
 .btn2-primary:focus,
 .btn2-primary.focus,
